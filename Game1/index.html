@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phish or Real?</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>📧 Phish or Real?</h1>
+  <p id="score">Score: 0</p>
+
+  <p>Use arrow keys: ⬅️ : Phish, ➡️ : Real, ⬇️ = Can't Decide</p>
+
+  <div id="progress-wrapper">
+    <span id="progress-label">Progress Bar:</span>
+    <div id="progress-container">
+        <div id="progress-bar">
+            <span id="progress-text">0%</span>
+        </div>
+    </div>
+</div>
+
+
+  <div id="game-container">
+    <div id="swipe-area">
+      <div id="message-box">
+        <div class="email-row">
+          <input type="checkbox" disabled />
+          <span class="star">☆</span>
+          <span class="sender" id="sender">Sender</span>
+          <span class="subject-snippet">
+            <span class="subject" id="subject">Subject</span> -
+            <span class="snippet" id="snippet">Snippet</span>
+          </span>
+          <span class="timestamp" id="timestamp">00/00/00</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="buttons">
+      <button id="phish-btn">Phish</button>
+      <button id="real-btn">Real</button>
+      <button id="undecided-btn">Can't Decide</button>
+    </div>
+    <p id="feedback"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
